@@ -8,7 +8,11 @@ const postSchema = new mongoose.Schema({
     username:{
         type: String,
         required:true
-    }
+    },
+    safetyIndex:{
+        type: Number,
+        required: false
+    },
 }, {timestamps: true})
 
 const Post = mongoose.model('Post', postSchema);
